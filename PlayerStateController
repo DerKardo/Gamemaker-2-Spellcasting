@@ -1,0 +1,16 @@
+enum Pstates {
+T = 0,
+TR = 1,
+R = 2,
+DR = 3,
+D = 4,
+DL = 5,
+L = 6,
+TL = 7,
+}
+
+enum Astates {
+Nono = 0,
+ATK = 1,
+pause = 2,
+}
