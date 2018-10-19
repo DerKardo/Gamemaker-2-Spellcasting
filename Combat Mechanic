@@ -1,0 +1,21 @@
+if ( ATKstate == 0){walkspd = 2}
+if(attacking = true) and (cooldown = 0){
+ATKstate = 1
+cooldown = 60
+}
+if (ATKstate == 1)
+{
+	walkspd = 0			//animationen und Richtung der Attacke
+	if(state == 0){instance_create_depth(x,y-16,0,oAtkAnim)}
+	else if(state == 1){instance_create_depth(x+16,y-16,0,oAtkAnim)}
+	else if(state == 2){instance_create_depth(x+16,y,0,oAtkAnim)}
+	else if(state == 3){instance_create_depth(x+16,y+16,0,oAtkAnim)}
+	else if(state == 4){instance_create_depth(x,y+16,0,oAtkAnim)}
+	else if(state == 5){instance_create_depth(x-16,y+16,0,oAtkAnim)}
+	else if(state == 6){instance_create_depth(x-16,y,0,oAtkAnim)}
+	else if(state == 7){instance_create_depth(x-16,y-16,0,oAtkAnim)}
+}
+if (ATKstate == 2)
+{
+walkspd = 0
+}
