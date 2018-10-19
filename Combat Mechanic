@@ -5,7 +5,7 @@ cooldown = 60
 }
 if (ATKstate == 1)
 {
-	walkspd = 0			//animationen und Richtung der Attacke
+	walkspd = 0			
 	if(state == 0){instance_create_depth(x,y-16,0,oAtkAnim)}
 	else if(state == 1){instance_create_depth(x+16,y-16,0,oAtkAnim)}
 	else if(state == 2){instance_create_depth(x+16,y,0,oAtkAnim)}
